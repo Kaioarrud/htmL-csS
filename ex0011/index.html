@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIdias em HTML5</title>
+</head>
+<body>
+    <H1>Imagem dinâmica</H1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.
+    </p>
+
+    <picture>
+        <source media="(mix-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(mix-width: 1050px)" srcset="imagens/foto-m.png" type="Imagem/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexivel">
+    </picture>
+      <h1>Reproduzindo audio</h1>
+      <p>Vamos aprender a reproduzir audios em html5</p>
+      <audio preload="metadata" autoplay controls>
+        <source src="midia/filipe-neurotico.mp3.mp3" type="audio/mpeg">
+        <source src="midia/filipe-neurotico.mp3.ogg" type="audio/ogg">
+        <source src="midia/filipe-neurotico.mp3.wav" type="audio/wav">
+        <p>Infelimente seu navegador não comsegue reproduzir audio. <a href="midia/filipe-neurotico.mp3.mp3">clique aqui para baixar o arquivo mp3</a></p>
+      </audio>
+    
+</body>
+</html>
