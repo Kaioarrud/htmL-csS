@@ -5,22 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tabelas</title>
     <style>
-        body{
+        body {
             font-family: Arial, Helvetica, sans-serif;
         }
-        table{
+
+        table {
+
             width: 500px;
             border-collapse: collapse;
         }
-        td, th{
+
+        td, th {
             border: 1px solid black;
             padding: 10px;
         }
+
+        caption{
+            font-size: 1,5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         thead, tfoot {
             background-color: gray;
             color: white;
         }
-        td.num{
+         
+        td.num {
             text-align: right;
         }
     </style>
@@ -37,16 +49,17 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>População das unidades federativas</caption>
         <thead>
             <tr>
-                <th>ESTADO</th>
-                <th>POPULAÇÃO</th>
+                <th scope="row">ESTADO</th>
+                <th scope="col" style="width: 50px;">POPULAÇÃO</th>
             </tr>
         </thead>
         <thead>
             <tfoot>
                 <tr>
-                    <th>TOTAL DE HABITANTE</th>
+                    <th scope="row">TOTAL DE HABITANTE</th>
                     <td class="num"><strong>210.147.125</strong></td>
                 </tr>
             </tfoot>
