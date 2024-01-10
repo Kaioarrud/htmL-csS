@@ -10,9 +10,9 @@
         }
 
         table {
-
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -31,9 +31,20 @@
             background-color: gray;
             color: white;
         }
-         
+
         td.num {
             text-align: right;
+        }
+        tbody > tr:nth-child(1n) {
+            background-color: darkgray;
+        }
+        tbody > tr:nth-child(2n) {
+            background-color: yellow;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
         }
     </style>
 </head>
@@ -171,5 +182,10 @@
             </tr>
         </tbody>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia voluptas aliquam ducimus quos provident deserunt quam ratione quibusdam alias quisquam beatae quod aspernatur, illo iure consequatur iste a commodi repellendus?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident deserunt id quidem laborum dolore soluta officiis. Nihil, ipsa. Repellendus placeat praesentium optio perspiciatis officia harum officiis provident facilis vitae Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit nihil quaerat expedita quam magni odit quidem? Hic beatae quam nulla velit ipsa suscipit reprehenderit corrupti. Vel deserunt repudiandae fugiat repellendus?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum soluta consequuntur qui et in. Consequuntur dolorem incidunt harum aut a praesentium odit, minus rerum unde perferendis mollitia quia sit! Eaque? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum rerum nisi totam? Cupiditate impedit numquam sit veniam nulla! Fugit eos deleniti autem vel obcaecati repellendus expedita distinctio excepturi facilis nobis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam sed debitis deserunt, quam voluptate itaque sapiente similique asperiores rerum possimus? Eveniet expedita recusandae officiis eum enim eos saepe tempora labore!</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem obcaecati enim expedita mollitia perspiciatis accusantium illum asperiores. Saepe modi voluptatibus aperiam ad impedit, eligendi suscipit consequuntur sapiente hic fuga voluptates. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque eius recusandae, possimus necessitatibus quibusdam fugit perspiciatis minima fuga iure modi illo excepturi enim culpa ipsa consequuntur iusto. Repudiandae, esse dicta. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit facere consectetur voluptate consequuntur eveniet officia dicta! Voluptatum vitae quo, eos quisquam non quod suscipit sequi officiis blanditiis, neque iure ex?</p>
 </body>
 </html>
