@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iest">Estado</label>
+            <select name="estado" id="iest">
+                <option value="" selected> --- Escolha --- </option>
+                <optgroup label="Região Norte">
+
+                    <option value="AM">Amazonas</option>
+                    <option value="Ac">Acre</option>
+                    <option value="Ro">Roraima</option>
+                    <option value="Am">Amapa</option>
+                    <option value="Pa">Pará</option>
+                    <option value="Ron">Rondonia</option>
+                    <option value="To">Tocantins</option>
+                </optgroup>
+                <optgroup label="Região Norte">
+
+                    <option value="MA">Maranhão</option>
+                    <option value="Pi">Pernambuco</option>
+                    <option value="Ba">Bahia</option>
+                    <option value="Ce">Ceára</option>
+                    <option value="Pa">Paraiba</option>
+                    <option value="RN">Rio grande do Norte</option>
+                    <option value="Pi">Piaui</option>
+                    <option value="Al">Alagoas</option>
+                </optgroup>
+                <optgroup label="Região centro-oeste">
+                    <option value="Mg">Mato grosso</option>
+                    <option value="Go">Goias</option>
+                    <option value="MS">Mato grosso do sul</option>
+                </optgroup>
+                <optgroup label="Região sul">
+                    <option value="Pa">Parana</option>
+                    <option value="Rs">Rio grande do sul</option>
+                    <option value="sc">Santa cartarina</option>
+                </optgroup>
+                <optgroup label="Região Sudeste">
+                    <option value="Rj">Rio de janiero</option>
+                    <option value="SP">São paulo</option>
+                    <option value="MG">Minas gerais</option>
+                    <option value="SC">Santa catarina</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="iprof">Profissão: </label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option>Administrado</option>
+                <option>Desenvolvedor</option>
+                <option>Contabilista</option>
+                <option>Professor</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="imsg">Mensagen: </label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
