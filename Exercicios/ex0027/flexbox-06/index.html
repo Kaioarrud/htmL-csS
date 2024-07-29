@@ -5,21 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>flexible box</title>
     <style>
-        div.conteiner{
-            background-color: red;
+       div.conteiner {
+        background-color: gold;
+        display: flex;
+        
+        flex-flow: row wrap;
+        align-content: space-around;
+        height: 300px;
 
-            display: flex;
-            flex-flow: row wrap;
-            align-content: flex-end;
-            height: 400px;
-
-        }
-        div.item {
-            background-color: blue;
-            border: 1px solid black;
-            text-align: center;
-            padding: 30px;
-        }
+       }
+       div.item{
+        background-color: aqua;
+        border: 1px solid black;
+        padding: 20px;
+       }
     </style>
 </head>
 <body>
@@ -35,7 +34,7 @@
         <div class="item">I</div>
         <div class="item">J</div>
         <div class="item">K</div>
-        <div class="item">l</div>
+        <div class="item">L</div>
         <div class="item">M</div>
     </div>
 </body>
