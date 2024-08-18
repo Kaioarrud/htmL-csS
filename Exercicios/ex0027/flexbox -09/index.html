@@ -5,29 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexible box</title>
     <style>
-    div.conteiner {
-      background-color: red;
-      display: flex;
-      
-    }
-    div.item {
-      background-color: violet;
-      border: 1px solid black;
-      height: 300px;
-      text-align: center;
-      flex: auto;
-
-    }
+      div.conteiner {
+        background-color: red;
+        display: flex;
+        flex-flow: row nowrap;
+      }
+      div.item{
+        background-color: aqua;
+        border: 1px solid black;
+        text-align: center;
+        flex-basis: 150px;
+      }
     </style>
 </head>
 <body>
     <div class="conteiner">
         <div class="item">A</div>
-        <div class="item">B</div>
+        <div class="item">Outro conteudo</div>
         <div class="item">C</div>
-        <div class="item">D</div>
+        <div class="item">Conteudo um pouco maior</div>
         <div class="item">E</div>
-        <div class="item">F</div>
+        <div class="item">Conteudo maior ainda que outro espaço</div>
         <div class="item">G</div>
     </div>
 </body>
